@@ -1,0 +1,33 @@
+import { SensorData } from '../sensor-data/sensor-data.entity';
+import { User } from '../users/user.entity';
+import { Alert } from '../alerts/alert.entity';
+import { ScheduledTask } from '../scheduled-tasks/scheduled-task.entity';
+export declare class Plant {
+    id: number;
+    name: string;
+    species: string;
+    family: string;
+    type: string;
+    location: string;
+    isPetToxic: boolean;
+    description: string;
+    plantedDate: Date;
+    waterFrequencyDays: number;
+    sunlightRequirement: string;
+    indoor: boolean;
+    imageUrl: string;
+    minSoilMoisture: number;
+    maxSoilMoisture: number;
+    minTemperature: number;
+    maxTemperature: number;
+    minLightLevel: number;
+    maxLightLevel: number;
+    minAirHumidity: number;
+    maxAirHumidity: number;
+    user: User;
+    sensorData: SensorData[];
+    alerts: Alert[];
+    scheduledTasks: ScheduledTask[];
+    createdAt: Date;
+    updatedAt: Date;
+}
